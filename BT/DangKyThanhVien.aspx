@@ -11,30 +11,31 @@
 <body>
     <form id="form1" runat="server">
 
-        <div class="container ">
+        <div class="text-center">
 
-            <h2 class="text-center">HỒ SƠ ĐĂNG KÝ</h2>
-
+            <h2 class="text-bg-warning">HỒ SƠ ĐĂNG KÝ</h2>
+            </div>
             <div class="row border border-primary bg-nen1">
                 <div class="col-md-8 p-2 text-center text-capitalize">
-                    Thông Tin Đăng Ký
+                  <h6 class="text-bg-danger">Thông Tin Đăng Ký</h6>  
                 </div>
                 <div class="col-md-4 pt-2 text-center border-left border-primary">
-                    Hồ Sơ Đăng Ký
+                   <h6 class="text-bg-info">Hồ Sơ Đăng Ký</h6> 
                 </div>
             </div>
 
 
 
-
+        
             <div class="row border border-primary">
                 <div class="col-md-8">
                     <div class="row">
+                       
                         <div class="col-md-3">
                             Tên đăng nhập
                         </div>
                         <div class="col-md-9">
-                            <asp:TextBox ID="txtTenDN" runat="server" MaxLength ="16" CssClass="form-control"></asp:TextBox>
+                            <asp:TextBox ID="txtTenDN" runat="server" MaxLength ="20" CssClass="form-control"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvTenDN"
                                 ControlToValidate="txtTenDN" tetx="*" ForeColor="#ff0000" Display="Dynamic"
                                 runat="server" ErrorMessage="Tên đăng nhập không được bỏ trống">
@@ -44,9 +45,6 @@
                                 CssClass="text-danger" ValidationExpression="[\w|\d|&|_|!]{8}[\w|\d|&|_|!]+"
                                 runat="server" ErrorMessage="Tên đăng nhập không hợp lệ" />
                         </div>
-
-
-                        
 
                     </div>
 
@@ -86,7 +84,7 @@
                     <div class="row mb-2 bg-nen1">
                         <div class="col-md-12 text-center p-2">
 
-                            <h3 class="text-bg-secondary">Thông Tin Cá Nhân </h3>
+                            <h3 class="text-bg-danger">Thông Tin Cá Nhân</h3>  
                         </div>
                     </div>
 
@@ -110,16 +108,16 @@
                             <div class="form-inline">
                                 <asp:DropDownList ID="ddlNgay" runat="server"></asp:DropDownList>
                                 <asp:RequiredFieldValidator ID="rfvNgay"
-                                    ControlToValidate="ddlNgay" Text="*" ForeColor="Yellow" Display="Dynamic"
-                                    runat="server" ErrorMessage="Thieu Ngay" />
+                                    ControlToValidate="ddlNgay" Text="*" ForeColor="#ff0000" Display="Dynamic"
+                                    runat="server" ErrorMessage="Thiếu Ngày" />
                                 <asp:DropDownList ID="ddlThang" runat="server"></asp:DropDownList>
                                 <asp:RequiredFieldValidator ID="rfvThang"
-                                    ControlToValidate="ddlThang" Text="*" ForeColor="Yellow" Display="Dynamic"
-                                    runat="server" ErrorMessage="Thieu Thang" />
+                                    ControlToValidate="ddlThang" Text="*" ForeColor="#ff0000" Display="Dynamic"
+                                    runat="server" ErrorMessage="Thiếu Tháng" />
                                 <asp:DropDownList ID="ddlNam" runat="server"></asp:DropDownList>
                                 <asp:RequiredFieldValidator ID="rfvNam"
-                                    ControlToValidate="ddlNam" Text="*" ForeColor="Yellow" Display="Dynamic"
-                                    runat="server" ErrorMessage="Thieu Nam" />
+                                    ControlToValidate="ddlNam" Text="*" ForeColor="#ff0000" Display="Dynamic"
+                                    runat="server" ErrorMessage="Thiếu Năm" />
                                 <br />
 
                             </div>
@@ -154,7 +152,7 @@
                                 Giới Tính
                             </div>
                             <div class="col-md-9">
-                                <asp:CheckBox ID="chkPhai" runat="server" Text="Nam" Checked="true" />
+                                <asp:CheckBox ID="chkPhai" runat="server" Text="Nam" Checked="True" />
                             </div>
                         </div>
 
@@ -194,6 +192,7 @@
                 
             </div>
         </div>
+       
     </form>
 </body>
 </html>
