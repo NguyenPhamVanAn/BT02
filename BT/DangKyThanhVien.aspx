@@ -17,7 +17,7 @@
             </div>
             <div class="row border border-primary bg-nen1">
                 <div class="col-md-8 p-2 text-center text-capitalize">
-                  <h6 class="text-bg-danger">Thông Tin Đăng Ký</h6>  
+                  <h6 class="text-bg-danger" >Thông Tin Đăng Ký</h6>  
                 </div>
                 <div class="col-md-4 pt-2 text-center border-left border-primary">
                    <h6 class="text-bg-info">Hồ Sơ Đăng Ký</h6> 
@@ -172,14 +172,14 @@
                                 <asp:TextBox ID="txtDienThoai" runat="server" CssClass="form-control"></asp:TextBox>
                             </div>
                         </div>
-
+                    
                         <div class="row mb-2">
                             <div class="col-md-12 text-center">
-                                <asp:Button ID="btDangKy" runat="server" Text="Đăng Ký" OnClick="btDangKy_Click" />
+                                <asp:Button ID="btDangKy" runat="server" Text="Đăng Ký" CssClass="table-warning w-25" OnClick="btDangKy_Click" />
                             </div>
                         </div>
                     </div>
-
+                   
 
 
 
